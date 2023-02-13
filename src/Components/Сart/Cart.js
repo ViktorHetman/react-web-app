@@ -9,10 +9,10 @@ function Cart({ cartItems }) {
   )
 
   return (
-    <div className={''}>
-      {!cartItems.length ? 'Ви нічого не вибрали' : ''}
+    <div className={styles.cart_contaier}>
+      {!cartItems.length ? 'Ви нічого не вибрали' : <span className={''}>Ціна: {totalPrice}.00 UAH</span>}
       <br />
-      <span className={''}>Ціна: {totalPrice}UAH</span>
+      
       <Button
         title={`${
           !!cartItems.length ? 'Зробити замволення!' : 'Розрахуватися'
