@@ -13,8 +13,8 @@ function Card({title, price, Image}) {
           {title} <span> {price}</span>
         </h4>
         <div className={styles.btn}>
-          <button>+</button>
-          <button>-</button>
+          <Button title={'+'} type={'add'} />
+          <Button title={'-'} type={'revmove'}/>
         </div>  
     </div>
   )

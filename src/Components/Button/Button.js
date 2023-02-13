@@ -1,9 +1,11 @@
 import React from 'react'
 
-function Button() {
+function Button({type, title, disable}) {
   return (
     <div>
-          <h3>button</h3>
+      <button disabled={disable}>
+        {title}
+      </button>
     </div>
   )
 }
