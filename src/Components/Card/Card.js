@@ -16,7 +16,7 @@ function Card({title, price, Image}) {
 
   return (
     <div className={styles.card}>
-        <span>{count}</span>
+        <span className={`${styles.card_badge} ${!!count ? styles.card_badge : styles.card_badge_hidden}`}>{count}</span>
         <div className={styles.image_container}>
             <img src={Image} alt={title}/>
         </div>

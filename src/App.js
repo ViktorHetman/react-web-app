@@ -7,7 +7,8 @@ const foods = data
 function App() {
   return (
     <div className="App">
-        <div>
+      <h1 className='heading'>Зробити замовлення</h1>
+        <div className='cards_container'>
           {foods.map((food) => {
             return <Card key={food.id} {...food}/>
           })}
