@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Button({type, title, disable}) {
+function Button({type, title, disable, onClick}) {
   return (
     <div>
-      <button disabled={disable}>
+      <button disabled={disable} onClick={onClick}>
         {title}
       </button>
     </div>
