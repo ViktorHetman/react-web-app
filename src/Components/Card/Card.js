@@ -1,14 +1,16 @@
 import React from 'react'
 import Button from '../Button/Button'
 
-function Card() {
+function Card({title, price, Image}) {
   return (
     <div>
       <div>
         <span></span>
-        <div></div>
+        <div>
+            <img src={Image} alt={title}/>
+        </div>
         <h4>
-          Назва <span> Ціна</span>
+          {title} <span> {price}</span>
         </h4>
         <div>
           <button>+</button>
