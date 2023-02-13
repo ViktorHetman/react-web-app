@@ -24,7 +24,7 @@ function Card({food, onAdd, onRemove}) {
             <img src={Image} alt={title}/>
         </div>
         <h4 className={styles.card_title}>
-          {title} <span className={styles.card_price}> {price} UAH</span>
+          {title} - <span className={styles.card_price}> {price} UAH</span>
         </h4>
         <div className={styles.btn}>
           <Button title={'+'} type={'add'} onClick={handleIncrement}/>

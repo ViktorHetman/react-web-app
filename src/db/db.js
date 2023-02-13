@@ -7,13 +7,13 @@ import iceCreamImg from "../images/icecream.png"
 import kebabImg from "../images/kebab.png"
 
  const data = [
-    {title: 'Pizza', price: 250, Image: pizzaImg, id:1 },
-    {title: 'Burger', price: 170, Image: burgerImg, id:2 },
-    {title: 'Coca', price: 50, Image: cocaImg, id:3 },
-    {title: 'Salad', price: 120, Image: saladImg,  id:4 },
-    {title: 'Water', price: 30, Image: waterImg, id:5 },
-    {title: 'IceCream', price: 50, Image: iceCreamImg, id:6 },
-    {title: 'Kebab', price: 90, Image: kebabImg, id: 7 },
+    {title: 'Піца', price: 250, Image: pizzaImg, id:1 },
+    {title: 'Бургер', price: 170, Image: burgerImg, id:2 },
+    {title: 'Кока-Кола', price: 50, Image: cocaImg, id:3 },
+    {title: 'Салат', price: 120, Image: saladImg,  id:4 },
+    {title: 'Вода', price: 30, Image: waterImg, id:5 },
+    {title: 'Морозиво', price: 50, Image: iceCreamImg, id:6 },
+    {title: 'Кебаб', price: 90, Image: kebabImg, id: 7 },
  ]
 
  export default data
