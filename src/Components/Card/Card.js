@@ -2,16 +2,19 @@ import React, {useState} from 'react'
 import Button from '../Button/Button'
 import styles from './Card.module.css'
 
-function Card({title, price, Image}) {
+function Card({food, onAdd, onRemove}) {
 
   const [count, setCount] = useState(0)
+  const {title, price, Image} = food
 
   const handleIncrement = () => {
     setCount(count+1)
+    onAdd(food)
   }
  
   const handleDecrement = () => {
     setCount(count-1)
+    onRemove(food)
   }
 
   return (
