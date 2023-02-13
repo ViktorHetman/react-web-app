@@ -21,11 +21,11 @@ function Card({title, price, Image}) {
             <img src={Image} alt={title}/>
         </div>
         <h4 className={styles.card_title}>
-          {title} <span> {price}</span>
+          {title} <span className={styles.card_price}> {price} UAH</span>
         </h4>
         <div className={styles.btn}>
-          <Button title={'+'} type={'add'} handleIncrement={handleIncrement}/>
-          {!!count ?(<Button title={'-'} type={'revmove'} handleDecrement={handleDecrement}/>) : ''}
+          <Button title={'+'} type={'add'} onClick={handleIncrement}/>
+          {!!count ?(<Button title={'-'} type={'remove'} onClick={handleDecrement}/>) : ''}
         </div>  
     </div>
   )
